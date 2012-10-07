@@ -98,7 +98,6 @@ myawesomemenu = {
 mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "terminal", terminal },
                                     { "Sublime Text", "sublime_text" },
-                                    { "geany", "geany" },
                                     { "firefox", "firefox" },
                                     { "chromium", "chromium --ignore-gpu-blacklist" },
                                     { "vlc", "vlc" }
@@ -214,7 +213,6 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "f",      function () awful.util.spawn( "firefox" ) end),
     awful.key({ modkey, "Shift"   }, "c",      function () awful.util.spawn( "chromium --ignore-gpu-blacklist" ) end),
     awful.key({ modkey, "Shift"   }, "w",      function () awful.util.spawn( "tuxcmd --left=/home/eber" ) end),
-    awful.key({ modkey, "Shift"   }, "g",      function () awful.util.spawn( "geany" ) end),
     awful.key({ modkey, "Shift"   }, "v",      function () awful.util.spawn( "gvim" ) end),
     awful.key({ modkey, "Shift"   }, "l",      function () awful.util.spawn( "sublime_text" ) end),
 
