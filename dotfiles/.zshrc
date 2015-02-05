@@ -1,3 +1,7 @@
+#
+# ~/.zshrc
+#
+
 ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="eber"
@@ -21,6 +25,8 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git)
+
+CORRECT_ALL="false"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,13 +65,16 @@ source ~/.zkbd/$TERM-${${DISPLAY:t}:-$VENDOR-$OSTYPE}
 #autoload -U promptinit
 #promptinit
 
+alias cd..='cd ..'
 alias l='ls --color'
 alias ls='ls --color'
 alias sbl='sublime_text'
-alias sub='sublime_text'
 alias feh='feh -Tdefault'
 alias vi='vim'
 
-export PATH=$PATH:~/bin
-export BROWSER=chromium
+export PATH=~/bin:$PATH:~/bin/android-ndk-r8e:~/bin/android-sdk-linux/tools:~/bin/android-sdk-linux/platform-tools:~/.gem/ruby/2.1.0/bin
+export PATH=$PATH:~/bin/depot_tools
+export BROWSER=firefox
 export EDITOR=vim
+
+stty -ixon
